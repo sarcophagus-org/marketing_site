@@ -63,6 +63,11 @@ h2 {
   margin-left: 25px;
 }
 
+.nav-item a:hover {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
 .navbar-dark .navbar-nav .nav-link {
   color: #fff;
 }
@@ -248,6 +253,77 @@ h2 {
   padding-bottom: 80px;
 }
 
+/* SARCO_token */
+#token-hero {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 150px;
+}
+
+#token-hero h1 {
+  font-size: 24px;
+}
+
+#token-hero h1 span {
+  color: red;
+}
+
+#distribution {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+#distribution h2 {
+  color: #000;
+  padding-bottom: 60px;
+}
+
+#flows {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+#flowx h2 {
+  padding-bottom: 60px;
+}
+
+
+/* About */
+
+#about-hero {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+
+#about-hero h1 {
+  font-size: 24px;
+  padding-bottom: 30px;
+}
+
+#about-text {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#about-text h2 {
+  color: #000;
+  padding-bottom: 20px;
+}
+
+#about-text p {
+  color: #000;
+  text-align: justify;
+}
+
+#about-text img {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+
+
 /* Media Queries for Mobile*/
 
 // Extra small devices (portrait phones, less than 576px)
@@ -269,6 +345,17 @@ h2 {
     padding-top: 150px;
     padding-bottom: 50px;
   }
+  #token-hero {
+    padding-top: 100px;
+    padding-bottom: 150px;
+  }
+  #token-hero h1 {
+    font-size: 36px;
+  }
+  #about-hero h1 {
+    font-size: 36px;
+  }
+
 }
 
 // Medium devices (tablets, 768px and up)
@@ -295,7 +382,7 @@ h2 {
     padding-bottom: 150px;
   }
   #how-embalmer h2 {
-    padding-top: 80px;
+    padding-top: 100px;
   }
   #how-curse{
     padding-top: 100px;
@@ -309,7 +396,25 @@ h2 {
     padding-bottom: 150px;
   }
   #how-archaeologist h2 {
-    padding-top: 40px;
+    padding-top: 60px;
+  }
+  #token-hero {
+    padding-top: 250px;
+    padding-bottom: 300px;
+  }
+  #token-hero h1 {
+    font-size: 36px;
+  }
+  #about-hero {
+    padding-top: 250px;
+    padding-bottom: 300px;
+  }
+  #about-hero h1 {
+    font-size: 36px;
+  }
+  #about-text {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
 
@@ -337,7 +442,7 @@ h2 {
     padding-bottom: 150px;
   }
   #how-embalmer h2 {
-    padding-top: 80px;
+    padding-top: 100px;
   }
   #how-curse{
     padding-top: 100px;
@@ -351,7 +456,25 @@ h2 {
     padding-bottom: 150px;
   }
   #how-archaeologist h2 {
-    padding-top: 40px;
+    padding-top: 60px;
+  }
+  #token-hero {
+    padding-top: 250px;
+    padding-bottom: 300px;
+  }
+  #token-hero h1 {
+    font-size: 36px;
+  }
+  #about-hero {
+    padding-top: 250px;
+    padding-bottom: 300px;
+  }
+  #about-hero h1 {
+    font-size: 36px;
+  }
+  #about-text {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
 
@@ -379,7 +502,7 @@ h2 {
     padding-bottom: 150px;
   }
   #how-embalmer h2 {
-    padding-top: 80px;
+    padding-top: 100px;
   }
   #how-curse{
     padding-top: 100px;
@@ -393,6 +516,24 @@ h2 {
     padding-bottom: 150px;
   }
   #how-archaeologist h2 {
-    padding-top: 40px;
+    padding-top: 60px;
+  }
+  #token-hero {
+    padding-top: 250px;
+    padding-bottom: 300px;
+  }
+  #token-hero h1 {
+    font-size: 36px;
+  }
+  #about-hero {
+    padding-top: 250px;
+    padding-bottom: 300px;
+  }
+  #about-hero h1 {
+    font-size: 36px;
+  }
+  #about-text {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
