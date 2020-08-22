@@ -7,3 +7,65 @@
 @import "syntax-highlighting";
 @import "bootstrap-4-jekyll/bootstrap-4-jekyll";
 @import "bootstrap_customization";
+
+
+/* Global Styles */
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 , h2, h3, h4, h5, h6, p, li, a {
+  font-family: 'Roboto Mono', monospace;
+}
+
+
+/* Nav */
+
+.navbar-brand img {
+  height: 90px;
+}
+
+.navbar-nav {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.nav-link {
+  margin-left: 25px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.nav-icon-20 {
+  height: 20px;
+}
+
+.nav-icon-25 {
+  height: 25px;
+}
+
+
+/* Footer */
+
+.sarco-footer {
+  color: #fff;
+  font-weight: 500;
+}
+
+.sarco-footer p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.sarco-footer li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.sarco-footer a {
+  text-decoration: underline;
+  color: #fff;
+}

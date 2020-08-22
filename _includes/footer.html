@@ -1,40 +1,34 @@
-
-<div class="py-5 border-top">
-  <div class="container">
-
-    <p class="h5 mb-3">{{ site.title | escape }}</p>
-
-    <div class="row">
-
-      <div class="col-sm">
-        <ul class="list-unstyled">
-          <li>
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-          </li>
-          {%- if site.email -%}
-            <li>
-              <a href="mailto:{{ site.email }}">
-                {{ site.email }}
-              </a>
-            </li>
-          {%- endif -%}
-        </ul>
-      </div>
-
-
-      <div class="col-sm text-right">
-        <p>{{- site.description | escape -}}</p>
-
-        <p>
-          <a href="https://nicolas-van.github.io/bootstrap-4-github-pages/">Powered by Bootstrap 4 Github Pages</a>
-        </p>
-      </div>
-
+<div class="container sarco-footer">
+  <div class="row">
+    <div class="col-2">
+      <img src="assets/img/tablet_footer.gif" class="img-fluid"/>
     </div>
 
+    <div class="col-4 pt-5">
+      <p>Sarcophagus is a 100% open source project built under the Unlicense. It has been built by a global team of software developers, crypto enthusiasts and security experts.</p>
+    </div>
+
+    <div class="col-1 pt-5">
+    </div>
+
+    <div class="col pt-5">
+      <ul>
+        <li><a href="#" target="_blank">Telegram Chat</a></li>
+        <li><a href="#" target="_blank">Twitter</a></li>
+        <li><a href="#" target="_blank">Medium Posts</a></li>
+        <li><a href="#" target="_blank">GitHub</a></li>
+        <li><a href="#" target="_blank">.onion Site</a></li>
+        <li><a href="#" target="_blank">Arweave Site</a></li>
+      </ul>
+    </div>
+
+    <div class="col pt-5">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">How It Works</a></li>
+        <li><a href="#">SARCO Token</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </div>
   </div>
 </div>

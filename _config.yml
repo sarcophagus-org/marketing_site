@@ -13,16 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Bootstrap 4 Github Pages
-email: ""
-description: >- # this means to ignore newlines until "baseurl:"
-  A Bootstrap 4 start up project for Jekyll and Github Pages
+title: Sarcophagus - Dead Man's Switch
+#email: ""
+description: A decentralized, crypto-powered dead man's switch built on ethereum and arweave.
 #baseurl: "" # the subpath of your site, e.g. /blog
-#url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://sarcophagus.io" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 #github_username:  jekyll
-
-repository: "nicolas-van/bootstrap-4-github-pages"
+#repository: "/sarcophagus-org/marketing_site"
 
 # Build settings
 plugins:
@@ -31,7 +29,9 @@ plugins:
 
 # A list of the pages to display in the navigation bar
 header_pages:
-
+  - how_it_works.html
+  - sarco_token.html
+  - about.html
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
