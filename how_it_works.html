@@ -10,8 +10,8 @@ title: How It Works
         <p><strong>Embalmer</strong> == User who creates a sarcophagus (dead man’s switch).</p>
         <p><strong>Recipient</strong> == The ETH address that will have access to the file once resurrected.</p>
         <p><strong>Archaeologist</strong> == Third party incentivized node operators.</p>
-        <p><strong>Curse</strong> == The agreement between the embalmer and archaeologist.</p>
-        <p><strong>Resurrection</strong> == The date the outer layer of the sarcophagus will be decrypted if not attested to.</p>
+        <p><strong>Curse</strong> == The agreement between the Embalmer and Archaeologist.</p>
+        <p><strong>Resurrection</strong> == The time the outer layer of the sarcophagus will be decrypted if not attested to.</p>
         <p><strong><a href="https://docs.google.com/document/d/1TOk-Q2SFXBjHLWwxgrBCCSi-Lo903Rui1TAeWJ6FDwY/edit?usp=sharing" target="_blank">Litepaper</a></strong> == A place to see how Sarcophagus works in more detail.</p>
       </div>
     </div>
@@ -28,14 +28,14 @@ title: How It Works
       </div>
       <div class="col-md-7">
         <h2>The Embalmer</h2>
-        <p>The user that creates a sarcophagus is called the embalmer. When creating a sarcophagus, the embalmer must provide several things:</p>
+        <p>The user that creates a sarcophagus is called the Embalmer. When creating a sarcophagus, the Embalmer must provide several things:</p>
         <ul>
           <li>The file to be placed inside the sarcophagus</li>
-          <li>The public address of the recipient (can be the same as the embalmer)</li>
+          <li>The public address of the Recipient (can be the same as the embalmer)</li>
           <li>The resurrection date (when the sarcophagus will be unwrapped if no further action is taken)</li>
-          <li>The bounty paid to the archaeologist for a successful resurrection</li>
+          <li>The bounty paid to the Archaeologist for a successful resurrection</li>
         </ul>
-        <p>When creating the sarcophagus, the emblamber will be quoted a price for their settings denominated in SARCO tokens. </p>
+        <p>When creating the sarcophagus, the Embalmer will be quoted a price for their settings denominated in SARCO tokens. </p>
       </div>
     </div>
   </div>
@@ -52,9 +52,9 @@ title: How It Works
 
       <div class="col-md-7">
         <h2>The Curse</h2>
-        <p>We call the contract between an embalmer and an archaeologist a curse. When an embalmer chooses a given archaeologist to be responsible for resurrecting their file at the correct time, a portion of the archaeologist’s posted bond is locked.</p>
-        <p>If the archaeologist resurrects the sarcophagus early (or late) this portion of their posted bond is burned, and the bounty is returned to the embalmer. </p>
-        <p>Once cursed, an archaeologist must perform their resurrection duties within perameters or they will be slashed. The archaeologist must also post a bond in SARCO tokens to be available for new curses. </p>
+        <p>We call the contract between an Embalmer and an Archaeologist a 'curse'. When an Embalmer selects an Archaeologist to be responsible for resurrecting their file at the correct time, a portion of the Archaeologist’s posted bond is locked.</p>
+        <p>If the Archaeologist resurrects the sarcophagus too early (or late), this portion of their posted bond is burned, and the bounty is returned to the Embalmer. </p>
+        <p>Once cursed, an Archaeologist must perform their resurrection duties within specific parameters or they will be slashed. The Archaeologist must also post a bond in SARCO tokens to be available for new curses. </p>
       </div>
 
       <div class="col-md-5 d-none d-sm-block">
@@ -73,9 +73,9 @@ title: How It Works
       </div>
       <div class="col-md-7">
         <h2>The Archaeologist</h2>
-        <p>An archaeologist is a third-party, disinterested, incentivized service provider. They operate the archaeologist server, post bonds in SARCO, resurrect files when needed, and are rewarded for good behavior. They are also harshly punished for bad behavior.</p>
-        <p>After spinning up an archaeologist server, the operator must set their own parameters for minimum digging fees, minimum bounty, and maximum resurrection time. This will allow the embalmer to see the minimum price in SARCO that an archaeologist will accept to be cursed. </p>
-        <p>Since the first step the embalmer takes is to client-side encrypt their payload; the archaeologist is unable to view the contents of any sarcophagus, even if they maliciously resurrect it early. </p>
+        <p>An Archaeologist is a third-party, disinterested, incentivized service provider. They operate the Archaeologist server, post bonds in SARCO, resurrect files when needed, and are rewarded for good behavior (They are also harshly punished for bad behavior).</p>
+        <p>After spinning up an Archaeologist server, the operator must set their own parameters for minimum digging fees, minimum bounty, and maximum resurrection time. This will allow the Embalmer to see the minimum price in SARCO that an Archaeologist will accept in order to be cursed. </p>
+        <p>Since the first step the Embalmer takes is to encrypt their payload client-side the Archaeologist is unable to view the contents of any sarcophagus, even if they maliciously attempt to resurrect it prematurely. </p>
       </div>
     </div>
   </div>
