@@ -44,6 +44,11 @@ h2 {
   background-color: #fff;
 }
 
+.btn-dark:active {
+  color: #000;
+  background-color: #fff;
+}
+
 .light-section {
   background-color: #fff;
 }
@@ -148,6 +153,12 @@ h2 {
 
 #hero p a:hover {
   color: #fff;
+}
+
+.litepaper-sum {
+  font-size: 10px;
+  padding-top: 20px;
+  color: #777;
 }
 
 #sub-hero {
