@@ -210,6 +210,26 @@ h2 {
   padding-bottom: 60px;
 }
 
+#grants {
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+
+#grants a {
+  text-decoration: none;
+}
+
+.link-box:hover {
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+}
+
+.link-box:hover p {
+  text-decoration: none;
+  color: #000;
+}
+
 #partners {
   color: #000;
   text-align: center;
@@ -286,21 +306,22 @@ h2 {
 }
 
 #distribution {
-  padding-top: 120px;
+  padding-top: 0px;
   padding-bottom: 120px;
+  text-align: center;
 }
 
 #distribution h2 {
-  color: #000;
   padding-bottom: 60px;
 }
 
 #flows {
   padding-top: 120px;
   padding-bottom: 120px;
+  text-align: center;
 }
 
-#flowx h2 {
+#flows h2 {
   padding-bottom: 60px;
 }
 
@@ -358,7 +379,35 @@ h2 {
   font-size: 24px;
 }
 
+/* content pages */
 
+.content-page {
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+
+.content-page h1 {
+  font-size: 36px;
+  padding-bottom: 30px;
+}
+
+.content-page p {
+  padding-bottom: 20px;
+}
+
+.content-page span {
+  text-decoration: underline;
+}
+
+.content-page p a {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.content-page p a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
 
 
 /* Media Queries for Mobile*/
