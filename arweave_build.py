@@ -80,6 +80,7 @@ class ArweaveBuild:
         self.config_state = ''  # commented/uncommented
         self.index = False
         self.html_lines = ''
+        self.GREEN, self.ENDC = '\033[92m', '\033[0m'
 
     def create_folder(self):
         # A separate build folder for Jekyll files for an Arweave deploy.
@@ -132,12 +133,18 @@ class ArweaveBuild:
         self.get_config_state()
         if self.uncommented_state():
             cmd = ['bundle', 'exec', 'jekyll', 'build', '--destination', self.arweave_dir]
-            subprocess.run(cmd, shell=True, check=True)  # No user input here.
+            if sys.platform == 'win32':
+                subprocess.run(cmd, shell=True, check=True)  # No user input here.
+            else:
+                subprocess.Popen(cmd, stdout=subprocess.PIPE)  # No user input here.
         elif self.commented_state():
             print('NOT READY for a build, config state was {}. Running a new instance of this script.'.format(
                 self.config_state))
             cmd = [python_os(), os.getcwd() + '/arweave_build.py']
-            subprocess.run(cmd, shell=True, check=True)  # No user input here.
+            if sys.platform == 'win32':
+                subprocess.run(cmd, shell=True, check=True)  # No user input here.
+            else:
+                subprocess.Popen(cmd, stdout=subprocess.PIPE)
             exit()  # Exit the current instance, we are running a new one now.
 
     def read_files(self):
@@ -166,9 +173,10 @@ class ArweaveBuild:
 
     def deploy_build(self):
         # Print help for deploying the build to the Arweave permaweb
-        print('\nDONE. You can now deploy the build to Arweave with the following command:')
-        print('\n$ arweave deploy-dir ' + self.arweave_dir +
-              ' --key-file /<path to your keyfile>/<name of your keyfile>.json \n')
+        print('\n' + self.GREEN + 'DONE. You can now deploy the build to Arweave with the following command:'
+              + self.ENDC)
+        print('\n' + self.GREEN + '$ arweave deploy-dir ' + self.arweave_dir +
+              ' --key-file /<path to your keyfile>/<name of your keyfile>.json \n' + self.ENDC)
 
     def run(self):
         self.create_folder()

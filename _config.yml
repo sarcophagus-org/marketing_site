@@ -42,6 +42,10 @@ exclude:
   - node_modules
   - update_boostrap.sh
   - arweave_build.py
+  - vendor
+
+
+
 
 
 
