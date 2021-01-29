@@ -14,7 +14,7 @@ def remove_dir(dir_path):
     except OSError as e:
         print("Failed removing {}: {}".format(dir_path, e))
     else:
-        print("Remove dir: {}".format(dir_path))
+        print("\nRemove dir: {}".format(dir_path))
 
 
 def create_dir(dir_path):
@@ -64,6 +64,16 @@ def python_os():
         python = 'python'
 
     return python
+
+
+def run_command(cmd):
+    if sys.platform == 'win32':
+        subprocess.run(cmd, shell=True, check=True)  # No user input here.
+    else:
+        proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)  # No user input here.
+        stdout, stderr = proc.communicate()
+        print('{}'.format(stdout))
+        print('{}'.format(stderr))
 
 
 class ArweaveBuild:
@@ -133,18 +143,12 @@ class ArweaveBuild:
         self.get_config_state()
         if self.uncommented_state():
             cmd = ['bundle', 'exec', 'jekyll', 'build', '--destination', self.arweave_dir]
-            if sys.platform == 'win32':
-                subprocess.run(cmd, shell=True, check=True)  # No user input here.
-            else:
-                subprocess.Popen(cmd, stdout=subprocess.PIPE)  # No user input here.
+            run_command(cmd)
         elif self.commented_state():
             print('NOT READY for a build, config state was {}. Running a new instance of this script.'.format(
                 self.config_state))
             cmd = [python_os(), os.getcwd() + '/arweave_build.py']
-            if sys.platform == 'win32':
-                subprocess.run(cmd, shell=True, check=True)  # No user input here.
-            else:
-                subprocess.Popen(cmd, stdout=subprocess.PIPE)
+            run_command(cmd)
             exit()  # Exit the current instance, we are running a new one now.
 
     def read_files(self):
