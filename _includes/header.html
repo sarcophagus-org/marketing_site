@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container">
-    <a class="navbar-brand" rel="author" href="{{ "/" | relative_url }}"><img src="{{site.baseurl}}/assets/img/header_logo.png"/> </a>
+    <a class="navbar-brand" rel="author" href="{{site.baseurl}}/index.html"><img src="{{site.baseurl}}/assets/img/header_logo.png"/> </a>
     {%- assign page_paths = site.header_pages -%}
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,7 +12,7 @@
           {%- assign my_page = site.pages | where: "path", path | first -%}
           {%- if my_page.title -%}
           <li class="nav-item">
-            <a class="nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            <a class="nav-link" href="{{site.baseurl}}{{my_page.url}}">{{ my_page.title | escape }}</a>
           </li>
           {%- endif -%}
         {% endfor -%}
@@ -24,8 +24,8 @@
             <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Grants</a>
 
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="{{site.baseurl}}/embalmer_grants">User Grants</a>
-              <a class="dropdown-item" href="{{site.baseurl}}/archaeologist_grants">Archaeologist Grants</a>
+              <a class="dropdown-item" href="{{site.baseurl}}/embalmer_grants.html">User Grants</a>
+              <a class="dropdown-item" href="{{site.baseurl}}/archaeologist_grants.html">Archaeologist Grants</a>
             </div>
           </div>
         </li>
