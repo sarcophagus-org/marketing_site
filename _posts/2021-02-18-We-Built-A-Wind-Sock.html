@@ -1,0 +1,60 @@
+---
+layout: post
+author: sarco_builders
+title: We Built a Wind Sock
+---
+
+<img class="post-hero-img img-fluid" src="{{site.baseurl}}/assets/img/wind-sock-hero.jpeg"/>
+<p class="post-hero-caption">Original art by https://twitter.com/livlarocca</p>
+
+
+
+<p>A windsock is an instrument that is used at airports as a dead-simple visual guide to wind speed and direction. It is able to communicate an incredible amount of information in glance. In under a second, a pilot can internalize the wind speed based on where the bend in the sock is:</p>
+
+<p>1st Hoop: 0–3kts (hanging down)<br/>
+2nd Hoop: 6kts<br/>
+3rd Hoop: 9kts<br/>
+4th Hoop: 12kts<br/>
+5th Hoop: 15kts+ (blowing 90° from ground)</p>
+
+<p>Then based on where the end of the windsock is, the pilot can also see the direction in which the wind is blowing at the runway altitude. All windsocks have these same color patters and wind attributes.</p>
+
+<p>If multiple observations are done the pilot can see the changes in speed and direction of the wind, essential data when you’re landing a small plane. In the above illustration we can see that the wind is blowing from right to left at 3kts or less.</p>
+
+<h2>What Does This have to do with Sarcophagus?</h2>
+
+<p>The builders have created a mechanism for token distribution that is based purely on opportunity cost. Its purpose is to distribute tokens in a fair way, but also to serve as a dead-simple indicator for builders, Sarcophagus DAO members, embalmers, archaeologists and other interested parties. This indicator will be extremely valuable for network participants until equilibriums are reached.</p>
+
+<p>It works by distributing 1% of the (fixed) 100,000,000 $SARCO token supply to users who choose to lock their stablecoins into the contract. Any locked coins are distributed $SARCO tokens in direct proportion to their weight in the pool recalculated per second. The contract only supports $USDC, $USDT, and $DAI. The contract runs for exactly one year.</p>
+
+<p>All tokens are liquid and can be unlocked at any time. When the stablecoins are locked into the contract, they are not being used for anything. Just sitting there; and that’s the point.</p>
+
+<img class="post-img img-fluid" src="{{site.baseurl}}/assets/img/mining.gif"/>
+
+<p class="post-caption">https://mining.sarcophagus.io</p>
+
+<p>In the future the builders expect the liquidity mining to allow for more clarity in making decisions. For example, if the DAO was to vote to buy or sell $SARCO tokens in the future, the history of the liquidity mining program transactions overlaid against the average DeFi lending opportunity cost for the period can inform a more accurate and less hand-wavy proposal for vote. Everyone wins here as it is hard to manipulate the past.</p>
+
+<p>The total opportunity cost for the liquidity mining contract can be found by taking the daily DeFi lending rates for each token ($USDC, $USDT and $DAI) from the beginning of the contract (Jan 13th, 00:00 UTC), multiplying them by the value of each token in the contract per day. You can then find the implied token value by dividing the opportunity cost by the number of emitted $SARCO tokens at the time of calculation.</p>
+
+<img class="post-img img-fluid" src="{{site.baseurl}}/assets/img/lend-rates.png"/>
+
+<p class="post-caption">https://defipulse.com/defi-lending</p>
+
+<p>Since lending rates (opportunity cost) are constantly variable, we must decide on a tick increment, one day is the easiest, hourly is even better if you have the data. Strictly speaking lending rates should be calculated per second and volume weighted averaged between all decentralized lending options, but this is a windsock not a dissertation — we’ve just been using data from Compound.</p>
+
+<p>In calculating implied value, there are 7 variables at play:</p>
+
+<ul>
+<li>USDC Locked (LUSDC)</li>
+<li>USDT Locked (LUSDT)</li>
+<li>DAI Locked (LDAI)</li>
+<li>USDC avg daily lending return (USDCdr)</li>
+<li>USDT avg daily lending return (USDTdr)</li>
+<li>DAI avg daily lending return (DAIdr)</li>
+<li>Measurement Period in Days (t=0 = liquidity mining launch at 00:00 UTC on Jan 13th, 2021)</li>
+</ul>
+
+<img class="post-img img-fluid" src="{{site.baseurl}}/assets/img/mining-equation.png"/>
+
+<p>The change in DeFi lending rates has an effect on the equation equal to locked value, and as you know — yields for different stablecoins can be very different, and can move quickly.</p>

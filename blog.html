@@ -1,0 +1,26 @@
+---
+layout: page
+title: Blog
+description: Information and accouncements from the Sarcophagus builders.
+
+---
+
+<div id="blog-listing">
+  <div class="content-page">
+    <div class="container">
+      <div class="col-md-2">
+      </div>
+      <div class="col-md-8">
+        <h1>Latest Posts</h1>
+
+        <ul>
+          {% for post in site.posts %}
+            <li>
+              <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

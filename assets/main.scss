@@ -413,6 +413,58 @@ h2 {
 }
 
 
+/* blog */
+
+#blog-post {
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+
+#blog-post p {
+  font-size: 1rem;
+  padding-bottom: 20px;
+}
+
+#blog-post h2 {
+  font-size: 2rem;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#blog-post h3 {
+  font-size: 1.5rem;
+}
+
+#blog-post a {
+  text-decoration: underline;
+  color: #fff;
+}
+
+#blog-post a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+#blog-post img {
+  padding-top: 15px;
+  padding-bottom: 50px;
+}
+
+#blog-post li {
+  font-size: 1rem;
+}
+
+#blog-listing a {
+  text-decoration: underline;
+  color: #fff;
+}
+
+#blog-listing a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+
 /* Media Queries for Mobile*/
 
 // Extra small devices (portrait phones, less than 576px)
@@ -574,6 +626,9 @@ h2 {
   }
   h2 {
     font-size: 24px;
+  }
+  h3 {
+    font-size: 18px;
   }
   #hero {
     padding-top: 150px;
