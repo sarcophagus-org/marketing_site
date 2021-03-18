@@ -87,7 +87,7 @@ Any and all feedback is appreciated, whether it's on twitter, discord, telegram,
 
 The 17m $SARCO will be distributed per archaeologist in proportion to the amount of $SARCO bonded, over the course of one year, calculated per second. In short: the more an Archaeologist has bonded, for longer, the more they will earn.   
 
-##### Planning:
+###### Planning:
 
 ### Uniwswap ETH/SARCO Pool Incentive
 
