@@ -16,7 +16,7 @@ title: It's Probably Nothing Update 0
 0. [Fixed supply token minted](https://etherscan.io/token/0x7697b462a7c4ff5f8b55bdbc2f4076c2af9cf51a)
 1. [Liquidity mining deployed, funded, and running](https://etherscan.io/address/0x7a9a0d2ae824ba57a5fe7dabaf7e6846021d4e8e)
 2. [Builders vesting distribution contract funded and running](https://etherscan.io/address/0xe79a907147055fbc9dee9f337c5746271b045122)
-3. [Aragon DAO voting proxy contract deployed](https://client.aragon.org/#/sarcophagus.aragonid.eth)
+3. [Aragon DAO voting proxy contract deployed](https://etherscan.io/address/0xBD53450702A341F356d609d76044DB8a06E200B3)
 4. [DAO created and funded w/incentive allocations](https://client.aragon.org/#/sarcophagus/0x3299f6a52983ba00ffaa0d8c2d5075ca3f3b7991/)
 5. [Uniswap ETH/SARCO pool small but chugging along](https://info.uniswap.org/token/0x7697b462a7c4ff5f8b55bdbc2f4076c2af9cf51a)
 
@@ -31,7 +31,7 @@ There is a version of the Sarcophagus dApp at: [https://app.dev.sarcophagus.io/]
 
 If you would like to help us test Sarcophagus please go to our [Discord](https://discord.gg/XPNKEZW) and request some testnet tokens. Someone will send you .01 ETH and 100 SARCO on the Rinkeby network. You can then connect your metammask to the app and try everything out! 
 
-The rinkeby token address for the mock $SARCO is: [0x77ec161f6c2f2ce4554695a07e071d3f0ef3aef5](https://rinkeby.etherscan.io/token/0x77ec161f6c2f2ce4554695a07e071d3f0ef3aef5)
+The rinkeby token address for the mock $SARCO is: `0x77ec161f6c2f2ce4554695a07e071d3f0ef3aef5`
 
 More explainations will be coming soon about limitations, but if you would like to do a quick and dirty test, here are the steps: 
 
@@ -39,7 +39,7 @@ More explainations will be coming soon about limitations, but if you would like 
 
 1. Set your metamask to rinkeby and connect to the dApp on the [create sarcophagus](https://app.dev.sarcophagus.io/#/create) page.
 
-2. Get the extended public key for your recipient account by signing a message from it here: [https://app.dev.sarcophagus.io/#/publicKey](https://app.dev.sarcophagus.io/#/publicKey) 
+2. Get the extended public key for your recipient account by signing a message from it [here](https://app.dev.sarcophagus.io/#/publicKey).
 If you don't want to deal with that, here's an ETH recipient keypair you can use: <br>
 Extended Public Key:
 `0x04451c509dee53b358c0261df187f150cdd354dff81ada711254d4f362c972866bf506b18d4a8817e1fae39c5c9dc0a4abeff17451e83dc5b66ab417d5015b80f4`<br>
