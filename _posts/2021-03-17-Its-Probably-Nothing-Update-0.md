@@ -50,7 +50,7 @@ Private Key:
 
 4. Set your resurrection time, please make sure this is at least a few hours away for the alpha. 
 
-5. Chose an Archaeologist to curse, you're welcome to adjust the parameters, but the defaults are set to make sure everything runs smoothly.
+5. Choose an Archaeologist to curse, you're welcome to adjust the parameters, but the defaults are set to make sure everything runs smoothly.
 
 6. Click "Finish" to create your sarcophagus.
 
@@ -62,7 +62,7 @@ Private Key:
 
 There is a good chance that you are going to encounter some errors. The best way to communicate those to the builders is to take a screenshot of the errors in the console + post in Discord. Even if no one responds WE STILL SEE IT AND LOVE YOU! In Chrome, right click the app page > Inspect > Console. If you don't mind, please include what you are trying to embalm and what setup you are using. 
 
-Any and all feedback is appreciated, whether it's on twitter, discord, telegram, etc. However submitting an issue on GitHub is bar far the best way to help the builders fix any bugs or negative user experiences prior to mainnet launch. 
+Any and all feedback is appreciated, whether it's on twitter, discord, telegram, etc. However submitting an issue on GitHub is by far the best way to help the builders fix any bugs or negative user experiences prior to mainnet launch. 
 
 ----
 ###### - - - - - - - - - - - - - - - - - - - -
