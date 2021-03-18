@@ -3,9 +3,9 @@ layout: post
 author: sarco_builders
 title: It's Probably Nothing Update 0
 ---
-###### - - - - - - - - - - - - - - - - - - - - - - -
+###### - - - - - - - - - - - - - - - - - - - -
 ## 0.1 Quick Update
-###### - - - - - - - - - - - - - - - - - - - - - - -
+###### - - - - - - - - - - - - - - - - - - - -
 
 ### What's happened so far on test
 
@@ -22,9 +22,9 @@ title: It's Probably Nothing Update 0
 
 ---
 
-###### - - - - - - - - - - - - - - - - - - - - - - -
+###### - - - - - - - - - - - - - - - - - - - -
 ## 0.2 Help Us Test Sarcophaugs on Hybrid Testnet
-###### - - - - - - - - - - - - - - - - - - - - - - -
+###### - - - - - - - - - - - - - - - - - - - -
 
 
 There is a version of the Sarcophagus dApp at: [https://app.dev.sarcophagus.io/](https://app.dev.sarcophagus.io/) it runs on the Rinkeby ETH testnet and the Arweave mainnet (shout out to AR for being so cheap we can test on main). 
@@ -65,9 +65,9 @@ There is a good chance that you are going to encounter some errors. The best way
 Any and all feedback is appreciated, whether it's on twitter, discord, telegram, etc. However submitting an issue on GitHub is bar far the best way to help the builders fix any bugs or negative user experiences prior to mainnet launch. 
 
 ----
-###### - - - - - - - - - - - - - - - - - - - - - - -
+###### - - - - - - - - - - - - - - - - - - - -
 ## 0.3 Current + Future Incentives
-###### - - - - - - - - - - - - - - - - - - - - - - -
+###### - - - - - - - - - - - - - - - - - - - -
 
 
 #### Currently Running:
