@@ -382,6 +382,7 @@ h2 {
   font-size: 24px;
 }
 
+
 /* content pages */
 
 .content-page {
@@ -410,6 +411,109 @@ h2 {
 .content-page p a:hover {
   text-decoration: underline;
   color: #fff;
+}
+
+.content-page h4 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: green;
+}
+
+.content-page h5 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: yellow;
+}
+
+.content-page h6 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: red;
+}
+
+
+/* blog */
+
+#blog-post {
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+
+#blog-post p {
+  font-size: 1rem;
+  padding-bottom: 20px;
+}
+
+#blog-post h2 {
+  font-size: 2rem;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#blog-post h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+#blog-post h4 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: green;
+}
+
+#blog-post h5 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: yellow;
+}
+
+#blog-post h6 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: red;
+}
+
+#blog-post a {
+  text-decoration: underline;
+  color: #fff;
+}
+
+#blog-post a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+#blog-post em {
+  font-weight: 800;
+}
+
+#blog-post img {
+  padding-top: 15px;
+  padding-bottom: 50px;
+}
+
+#blog-post li {
+  font-size: 1rem;
+}
+
+#blog-listing h4 {
+  padding-bottom: 15px;
+}
+
+#blog-listing a {
+  text-decoration: underline;
+  color: #fff;
+}
+
+#blog-listing a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+#blog-post code {
+  background-color: #1D1E21;
+  color: #51A2CA;
+  font-size: 100%;
 }
 
 
@@ -574,6 +678,9 @@ h2 {
   }
   h2 {
     font-size: 24px;
+  }
+  h3 {
+    font-size: 18px;
   }
   #hero {
     padding-top: 150px;

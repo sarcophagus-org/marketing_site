@@ -1,23 +1,48 @@
 ---
 layout: default
 ---
-<article>
+<div id="blog-post">
+  <article>
 
-  <header>
-    <h1>{{ page.title | escape }}</h1>
-    <p class="text-muted">
-      <time datetime="{{ page.date | date_to_xmlschema }}">
-        {%- assign date_format = "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
-      </time>
-      {%- if page.author -%}
-        • {{ page.author }}
-      {%- endif -%}
-    </p>
-  </header>
+    <header>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2">
+            </div>
 
-  <section>
-    {{ content }}
-  </section>
+            <div class="col-md-8">
+              <p><a href="{{site.baseurl}}/blog">&larr; Back to posts</a></p>
+              <h1>{{ page.title | escape }}</h1>
+              <p class="">
+                <time datetime="{{ page.date | date_to_xmlschema }}">
+                  {%- assign date_format = "%b %-d, %Y" -%}
+                  {{ page.date | date: date_format }}
+                </time>
+                {%- if page.author -%}
+                  by {{ page.author }}
+                {%- endif -%}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
 
-</article>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+          </div>
+          <div class="col-md-8">
+            {{ content }}
+          </div>
+        </div>
+        </div>
+    </section>
+
+
+
+  </article>
+</div>

@@ -33,6 +33,7 @@ header_pages:
   - sarco_token.html
   - incentives.html
   - about.html
+  - blog.html
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
