@@ -121,6 +121,28 @@ h2 {
   padding-bottom: 10px;
 }
 
+.nav-icons .nav-item {
+  width: 40px;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  background-color: #000;
+}
+
+.nav-item a:hover {
+  text-decoration: none;
+}
+
+.dropdown-menu {
+  padding:0; 
+  border-radius: 0;
+}
+
+.dropdown-item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 
 /* Footer */
 

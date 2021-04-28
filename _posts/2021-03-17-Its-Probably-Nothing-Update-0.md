@@ -3,6 +3,9 @@ layout: post
 author: sarco_builders
 title: It's Probably Nothing Update 0
 ---
+
+<img class="post-hero-img img-fluid" src="{{site.baseurl}}/assets/img/probably_nothing_0.png"/>
+
 ###### - - - - - - - - - - - - - - - - - - - -
 ## 0.1 Quick Update
 ###### - - - - - - - - - - - - - - - - - - - -

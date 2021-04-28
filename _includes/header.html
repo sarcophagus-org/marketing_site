@@ -7,42 +7,82 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        {%- for path in page_paths -%}
-          {%- assign my_page = site.pages | where: "path", path | first -%}
-          {%- if my_page.title -%}
-          <li class="nav-item">
-            <a class="nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-          </li>
-          {%- endif -%}
-        {% endfor -%}
+      <ul class="navbar-nav mx-auto">
 
-        
-        <li class="nav-item">
-          <a class="nav-link" href="https://mining.sarcophagus.io" target="_blank">Mining</a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link" href="https://client.aragon.org/#/sarcophagus.aragonid.eth" target="_blank">DAO</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Learn
+          </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="{{site.baseurl}}/how_it_works.html">How It Works</a>
+              <a class="dropdown-item" href="{{site.baseurl}}/sarco_token.html">$SARCO Token</a>
+              <a class="dropdown-item" href="{{site.baseurl}}/incentives.html">Incentives</a>
+              <a class="dropdown-item" href="{{site.baseurl}}/about.html">About</a>
+              <a class="dropdown-item" href="{{site.baseurl}}/blog.html">Blog</a>
+            </div>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="https://twitter.com/sarcophagusio" target="_blank"><img src="{{site.baseurl}}/assets/img/twitter_icon.png" class="nav-icon-25"/></a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Use
+          </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://app.dev.sarcophagus.io/" target="_blank">Rinkeby Testnet App</a>
+              <a class="dropdown-item" href="https://app.dev.sarcophagus.io/" target="_blank">Mainnet App (WARNING: UNAUDITED)</a>
+            </div>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="https://discord.gg/XPNKEZW" target="_blank"><img src="{{site.baseurl}}/assets/img/discord-icon.png" class="nav-icon-25"/></a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Earn
+          </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://mining.sarcophagus.io/" target="_blank">Stablecoin Liquidity Mining</a>
+              <a class="dropdown-item" href="#">UNI-V2 LP Token Farming (Coming soon)</a>
+              <a class="dropdown-item" href="{{site.baseurl}}/incentives.html">Incentives</a>
+            </div>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="https://t.me/sarcophagusio" target="_blank"><img src="{{site.baseurl}}/assets/img/telegram_icon.png" class="nav-icon-20"/></a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Govern
+          </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://govern.sarcophagus.io/" target="_blank">Governance App</a>
+              <a class="dropdown-item" href="https://client.aragon.org/#/sarcophagus/" target="_blank">Aragon DAO</a>
+            </div>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/sarcophagus-org" target="_blank"><img src="{{site.baseurl}}/assets/img/github_icon.png" class="nav-icon-25"/></a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Play
+          </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://rarible.com/sarcophagus-merch" target="_blank">NFT Merch (drop coming soon)</a>
+            </div>
         </li>
-
       </ul>
+
+      <ul class="navbar-nav">
+        <li class="nav-item nav-icons">
+          <a class="nav-link" href="https://twitter.com/sarcophagusio" target="_blank"><img src="/assets/img/twitter-icon-solid.svg" class="nav-icon-20"/></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-icon" href="https://discord.gg/XPNKEZW" target="_blank"><img src="/assets/img/discord-icon-solid.svg" class="nav-icon-20"/></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-icon" href="https://t.me/sarcophagusio" target="_blank"><img src="/assets/img/telegram-icon-solid.svg" class="nav-icon-20"/></a>
+        </li>
+
+        <li class="nav-item nav-icon">
+          <a class="nav-link" href="https://github.com/sarcophagus-org" target="_blank"><img src="/assets/img/github-icon-solid.svg" class="nav-icon-20"/></a>
+        </li>
+      </ul>
+
     </div>
   </div>
 </nav>
+
+
