@@ -21,12 +21,12 @@ DAO Launched
 	- 79,000,000 $SARCO transferred to DAO.
 	- Treasury only controllable by on-chain vote. 
 
-Branches:
+### Branches:
  - UNI-LP Farming
 	- Allocation: 2,500,000 $SARCO proportional linear emission over 1 year. 
 	- Requires DAO vote to fund contract.
 
-Logs:
+### Logs:
 - Embalmer Use Incentives
 	- Allocation: 2,500,000 $SARCO
 	- Distribution specifics TBD
