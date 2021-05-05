@@ -4,7 +4,7 @@ author: sarco_builders
 title: We Built A Fire
 ---
 
-<img class="post-hero-img img-fluid" src="https://sarcophagus.io/assets/img/fire.gif"/>
+<img class="post-hero-img img-fluid" src="https://sarcophagus.io/assets/img/fire.jpeg/>
 
 Assuming you want to build a long burning, hot fire; you start with small, dry, and quick burning kindling, add twigs, small branches, then logs. Using this principal as a guide; the Sarcophagus builders have employed several different on-chain mechanisms to help assure a rational and easily measurable network launch.
 
