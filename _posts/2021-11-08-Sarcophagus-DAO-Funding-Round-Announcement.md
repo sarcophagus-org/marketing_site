@@ -54,4 +54,4 @@ A few things that we will keep in mind for the next funding round:
 
 ## What's Next
 
-Building! Lots of improvements coming to the project including L2 support. Please join the Discord channel for announcements about future incentives for both dead man's switch creators (Embalmers) and node operators (Archaeologists) coming shortly. 
+Building! Lots of improvements coming to the project including L2 support. Please join the [Discord](https://discord.gg/XPNKEZW) and [Telegram](https://t.me/sarcophagusio) channels for announcements about future incentives for both dead man's switch creators (Embalmers) and node operators (Archaeologists) coming shortly. 
