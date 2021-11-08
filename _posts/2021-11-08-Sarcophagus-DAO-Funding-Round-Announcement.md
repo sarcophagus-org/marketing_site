@@ -8,7 +8,7 @@ title: Sarcophagus DAO Funding Round Annoucement
 <img class="post-hero-img img-fluid" src="{{site.baseurl}}/assets/img/sarco_placeholder.png"/>
 
 
-The Sarcophagus DAO is happy to announce the closing of its $1.8m initial funding round led by [Placeholder Ventures](https://www.placeholder.vc/), with participation from [Greenfield One](https://www.greenfield.one/), [Blockchain.com Ventures](https://www.blockchain.com/ventures), [Coral Defi](https://www.coralcapital.io/, Luis Cuende (Aragon), and Kain Warwick (Synthetix).
+The Sarcophagus DAO is happy to announce the closing of its $1.8m initial funding round led by [Placeholder Ventures](https://www.placeholder.vc/), with participation from [Greenfield One](https://www.greenfield.one/), [Blockchain.com Ventures](https://www.blockchain.com/ventures), [Coral Defi](https://www.coralcapital.io/), Luis Cuende (Aragon), and Kain Warwick (Synthetix).
 
 This is a major milestone in our efforts as a collective DAO. This funding will supercharge our ability to deliver on the promise of a truly decentralized and robust dead man's switch; something that has never existed in the past. 
 
