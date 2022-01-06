@@ -3,8 +3,7 @@ layout: post
 author: sarco_builders
 title: Sarcophagus DAO Closes $5.4m to Build the First Decentralized Dead Man’s Switch 
 ---
-
-January 6th, 2022 - Sarcophagus was built to be a general purpose, decentralized, and immutable dead man’s switch. It runs on Ethereum and Arweave, a rapidly growing permanent file storage network. After a year in alpha development; the application now has over $5m in fresh funding to further develop and proliferate the software. The list of investors includes some of the most well-known players in the space including Placeholder, Greenfield One, Inflection, Infinite, Lattice, LD Capital, Lo Enterprises, Compound VC, Hinge, Blockchange, Arweave and several angels. 
+Sarcophagus was built to be a general purpose, decentralized, and immutable dead man’s switch. It runs on Ethereum and Arweave, a rapidly growing permanent file storage network. After a year in alpha development; the application now has over $5m in fresh funding to further develop and proliferate the software. The list of investors includes some of the most well-known players in the space including Placeholder, Greenfield One, Inflection, Infinite, Lattice, LD Capital, Lo Enterprises, Compound VC, Hinge, Blockchange, Arweave and several angels. 
 
 Sarcophagus is 100% decentralized and open source (Unlicense) using a DAO architecture. The investors were required to work directly with the DAO, and votes were conducted approving the respective investor agreements and vesting schedules. The best part: It’s all recorded on-chain, available to the public, forever:
 
