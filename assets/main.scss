@@ -29,9 +29,6 @@ h2 {
   font-size: 20px;
 }
 
-h3 {
-  font-size: 18px;
-}
 
 .btn-dark {
   border-color: #fff;
@@ -64,6 +61,7 @@ h3 {
 
 .light-section h3 {
   color: #000;
+  font-size: 16px;
 }
 
 /* Nav */
@@ -289,6 +287,10 @@ h3 {
 .partner-box img {
   padding-bottom: 10px;
   max-height: 100px;
+}
+
+.partner-box h3 {
+  padding-bottom: 20px;
 }
 
 
