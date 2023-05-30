@@ -7,14 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sarcophagus Crypto Dead Man's Swtich</title>
   <meta name="description" content="Sarcophagus is an autonomous, incentivized dead man's switch dApp built on Ethereum and Arweave.">
-  <link rel="icon" href="/assets/img/favicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="icon" href="{{ site.baseurl }}/assets/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
 
   <!-- add random css style overrides -->
   <script>
     window.onload = function() {
-        var styles = ['/assets/css/bluegreen.css', '/assets/css/greenyellow.css', '/assets/css/blackpurple.css', '/assets/css/goldyellow.css', '/assets/css/browntan.css']; // your CSS filenames
+        var styles = ['{{ site.baseurl }}/assets/css/bluegreen.css', '{{ site.baseurl }}/assets/css/greenyellow.css', '{{ site.baseurl }}/assets/css/blackpurple.css', '{{ site.baseurl }}/assets/css/goldyellow.css', '{{ site.baseurl }}/assets/css/browntan.css']; // your CSS filenames
         var style = styles[Math.floor(Math.random() * styles.length)]; // select a random filename
         var link = document.createElement('link');
         
