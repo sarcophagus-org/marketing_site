@@ -1,0 +1,573 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sarcophagus Crypto Dead Man's Swtich</title>
+  <meta name="description" content="Sarcophagus is an autonomous, incentivized dead man's switch dApp built on Ethereum and Arweave.">
+  <link rel="icon" href="/assets/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <!-- add random css style overrides -->
+  <script>
+    window.onload = function() {
+        var styles = ['/assets/css/bluegreen.css', '/assets/css/greenyellow.css', '/assets/css/blackpurple.css', '/assets/css/goldyellow.css', '/assets/css/browntan.css']; // your CSS filenames
+        var style = styles[Math.floor(Math.random() * styles.length)]; // select a random filename
+        var link = document.createElement('link');
+        
+        link.rel = 'stylesheet';
+        link.href = style;
+        
+        document.head.appendChild(link); // append the link element to the head
+    };
+  </script>
+
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180877699-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-180877699-1');
+  </script>
+
+
+
+
+
+
+<!--
+   ▄▄▄▄▄   ██   █▄▄▄▄ ▄█▄    ████▄ █ ▄▄   ▄  █ ██     ▄▀    ▄      ▄▄▄▄▄
+  █     ▀▄ █ █  █  ▄▀ █▀ ▀▄  █   █ █   █ █   █ █ █  ▄▀       █    █     ▀▄
+▄  ▀▀▀▀▄   █▄▄█ █▀▀▌  █   ▀  █   █ █▀▀▀  ██▀▀█ █▄▄█ █ ▀▄  █   █ ▄  ▀▀▀▀▄
+ ▀▄▄▄▄▀    █  █ █  █  █▄  ▄▀ ▀████ █     █   █ █  █ █   █ █   █  ▀▄▄▄▄▀
+              █   █   ▀███▀         █       █     █  ███  █▄ ▄█
+             █   ▀                   ▀     ▀     █         ▀▀▀
+            ▀                                   ▀
+
+A decentralized dead man's switch
+
+telegram: https://t.me/sarcophagusio
+
+discord: https://discord.gg/XPNKEZW
+
+contact: nospam@sarcophagus.io
+
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: OpenPGP.js v4.10.7
+Comment: https://openpgpjs.org
+
+xjMEX0RtehYJKwYBBAHaRw8BAQdAHT2CAePaeVHyMtIMbGsN8aaATyz5DkQ0
+TNVpV3SRSGjNLW5vc3BhbUBzYXJjb3BoYWd1cy5pbyA8bm9zcGFtQHNhcmNv
+cGhhZ3VzLmlvPsKPBBAWCgAgBQJfRG16BgsJBwgDAgQVCAoCBBYCAQACGQEC
+GwMCHgEAIQkQHLZa1vaeT7gWIQRw0cZDu2CCF27JK3UctlrW9p5PuGyqAQDp
+9bpd1gd6/BU3s1vgAf9RTXp+0zk4gRLeIE3jQxAHRAEAxJ5T2DbSNuwuyKV3
+NDxhfbjhtwRCpPYfoWrOXMrntwHOOARfRG16EgorBgEEAZdVAQUBAQdAVawc
+58xyjpS+j/7zunaSbGFxUj2y51VbzbcONcy7wF0DAQgHwngEGBYIAAkFAl9E
+bXoCGwwAIQkQHLZa1vaeT7gWIQRw0cZDu2CCF27JK3UctlrW9p5PuBq3AQDq
+ds+8Kf2wxfrqZWw0VpGrxeuv5s7+qS0PhedIVP7z/wD9EFqanhQK7y7E9/pR
+1Mw4/KIWYeSXCayoOwSIpPn5ZgU=
+=J1Ok
+-----END PGP PUBLIC KEY BLOCK-----
+
+-->
+
+
+</head>
+<body>
+
+<div id="nav">
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-dark">
+		  <div class="container-fluid">
+		    <!-- Logo -->
+		    <a class="navbar-brand" href="/">
+		      <img src="/assets/img/sarco-logo-white.png" alt="Logo"/>
+		    </a>
+
+		    <!-- Navbar links -->
+		    <div class="justify-content-end" id="navbarNav">
+		      <ul class="navbar-nav">
+		        <li class="nav-item">
+		          <a class="nav-link" href="https://sarcopahgus.notion.site/Sarcophagus-Documentation-9d9044719669401a8738a1b9059333cf" target="_blank">Documentation</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="app-link-button" href="https://app.dev.sarcophagus.io/" target="_blank">Go to App</a>
+		        </li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+	</div>
+</div>
+
+
+
+<div id="hero">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 mx-auto hero-text">
+				<h1>Decentralized, blockchain-enabled, cryptographically secure, general-purpose</h1>
+				<div class="accent-bg-hero">
+					<h1>Digital Dead Man's Switch</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div id="subHero">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-lg-8 mx-auto">
+				<h4>Dead man's switch - wikipedia.org > wiki > Dead_man's_switch</h4>
+				<p>A dead man's switch is a switch designed to be activated or deactivated if the human operator becomes incapacitated, such as through death, loss of consciousness, or being bodily removed from control</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div id="forDevs">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 mx-auto">
+				<h2> For Developers, By Developers</h2>
+			</div>
+			<div class="col-lg-10 mx-auto">
+				<p>Sarcophagus is decentralized, open-source and DAO owned + operated. We believe bringing dead man's switch funcationality to the web3 ecosystem can empower and provide security infrastructure for an entire generation of applications, regaurdless of their size. We believe everyone, including individuals, should have the right to affordable, accessable, immutable secret storage and recovery.</p>
+			</div>
+
+
+
+			<div class="container dev-links">
+				<div class="row">
+					<div class="col-md-10 mx-auto">
+						<div class="row">
+
+							<div class="col-12 col-md-6 col-xl-3">
+								<a href="/assets/pdf/sarcophagus_litepaper_v0.2.pdf" target="_blank">
+									<div class="dev-link">
+										<div class="row">
+											<div class="col-12 dev-arrow">
+												<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+								  					<path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
+												</svg>
+											</div>
+										</div>
+										<h3>View Litepaper</h3>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-12 col-md-6 col-xl-3">
+								<a href="https://client.aragon.org/#/sarcophagus/" target="_blank">
+									<div class="dev-link">
+										<div class="row">
+											<div class="col-12 dev-arrow">
+												<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+								  					<path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
+												</svg>
+											</div>
+										</div>
+										<h3>Governance</h3>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-12 col-md-6 col-xl-3">
+								<a href="https://sarcopahgus.notion.site/Sarcophagus-Documentation-9d9044719669401a8738a1b9059333cf" target="_blank">
+									<div class="dev-link">
+										<div class="row">
+											<div class="col-12 dev-arrow">
+												<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+								  					<path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
+												</svg>
+											</div>
+										</div>
+										<h3>Documentation</h3>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-12 col-md-6 col-xl-3">
+								<a href="https://discord.gg/5XkvsEmMab" target="_blank">
+									<div class="dev-link">
+										<div class="row">
+											<div class="col-12 dev-arrow">
+												<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+								  					<path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
+												</svg>
+											</div>
+										</div>
+										<h3>Dev Chat</h3>
+									</div>
+								</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+<div id="longTerm">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7">
+				<h2>Long-Term Storage and Recovery</h2>
+				<div class="row">
+					<div class="col-12 col-lg-9">
+						<p>Sarcophagus is designed to allow recovery at custom intervals, when the payload is available for decryption based on a lack of response from the creator. A more complete backup system than traditional recovery mechanisms.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-5">
+				<div id="pocketWatch">
+					<img src="/assets/img/pocketwatch.png" alt="Logo" class="img-fluid"/>
+				</div>
+			</div>
+		</div>
+
+		<!-- 
+		<div class="row">
+			<div class="col-md-6">
+				<img src="https://placehold.co/700x350/png" alt="Logo" class="img-fluid"/>
+			</div>
+			<div class="col-md-6">
+				<img src="https://placehold.co/700x350/png" alt="Logo" class="img-fluid"/>
+			</div>
+		</div>
+		-->
+	</div>
+</div>
+
+
+
+
+
+
+<div id="useCases">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2>Use Case Potential:</h2>
+			</div>
+		</div>
+
+		<!-- hidden on large views -->
+		<div class="row d-lg-none">
+			<div class="col-12">
+				<h3><span class="accent-bg-trans">emergency communications</span></h3>
+				<h3><span class="accent-bg-trans">whistleblowers</span></h3>
+				<h3><span class="accent-bg-trans">digital inheritance</span></h3>
+				<h3><span class="accent-bg-trans">crypto key management</span></h3>
+				<h3><span class="accent-bg-trans">credential passdown</span></h3>
+			</div>
+		</div>
+
+		<!-- hidden on small views -->
+		<div class="row d-sm-none d-md-none d-lg-flex">
+			
+			<div class="col-4">
+				<div id="radioImg">
+					<div id="radioImgText">
+						<h3><span class="accent-bg-trans">emergency communications</span></h3>
+					</div>
+					<div id="radioImgText2">
+						<h3><span class="accent-bg-trans">whistleblowers</span></h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-4">
+				<div id="safeImg">
+					<div id="safeImgText">
+						<h3><span class="accent-bg-trans">digital inheritance</span></h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-4">
+				<div id="keysImg">
+					<div id="keysImgText">
+						<h3><span class="accent-bg-trans">crypto key management</span></h3>
+					</div>
+					<div id="keysImgText2">
+						<h3><span class="accent-bg-trans">credential passdown</span></h3>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="row">
+			<div class="col-12 col-lg-6">
+				<p>There are nearly unlimited use cases for Sarcophagus. It is useful in any situation where a user may want to release information in the event of their removal from control.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+<div id="partners">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2>Partners and Supporters</h2>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xl-10 mx-auto">
+				<div class="row">
+					<div class="col-6 col-lg-3">
+						<img src="/assets/img/placeholder.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+					<div class="col-6 col-lg-3">
+						<img src="/assets/img/greenfield.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+					<div class="col-6 col-lg-3">
+						<img src="/assets/img/inflection.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+					<div class="col-6 col-lg-3">
+						<img src="/assets/img/lattice.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-xl-10 mx-auto">
+				<div class="row">
+					<div class="col-6 col-lg-3">
+						<img src="/assets/img/blockchain.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+					<div class="col-6 col-lg-3">
+						<img src="/assets/img/4sv.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+					<div class="col-6 col-lg-3">
+						<img src="/assets/img/blockchange.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+					<div class="col-6 col-lg-3">
+						<img src="/assets/img/decent.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="row">
+			<div class="col-xl-10 mx-auto">
+				<div class="row">
+					<div class="col-6 col-lg-3">
+						<img src="/assets/img/coral.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+					<div class="col-6 col-lg-3">
+						<img src="/assets/img/3se.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+					<div class="col-6 col-lg-3">
+						<img src="/assets/img/compound.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+					<div class="col-6 col-lg-3">
+						<img src="/assets/img/arweave.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-xl-10 mx-auto">
+				<div class="row">
+					<div class="col-6 col-lg-3">
+						<img src="/assets/img/nxgen.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+					<div class="col-6 col-lg-3">
+						<img src="/assets/img/horizons.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+					<div class="col-6 col-lg-3">
+						<img src="/assets/img/infinite.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+					<div class="col-6 col-lg-3">
+						<img src="/assets/img/ld.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-xl-10 mx-auto">
+				<div class="row">
+					<div class="col-6 col-lg-3">
+						<img src="/assets/img/openweb.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+					<div class="col-6 col-lg-3">
+						<img src="/assets/img/lo.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+					<div class="col-6 col-lg-3">
+						<img src="/assets/img/andres.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+					<div class="col-6 col-lg-3">
+						<img src="/assets/img/clayton.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="row">
+			<div class="col-xl-10 mx-auto">
+				<div class="row">
+					<div class="col-6 col-lg-3">
+						<img src="/assets/img/jason.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+					<div class="col-6 col-lg-3">
+						<img src="/assets/img/kain.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+					<div class="col-6 col-lg-3">
+						<img src="/assets/img/luis.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-12">
+				<div id="alchemyBadge">
+					<script>const BADGE_ID = 'DczNjM2NTA5ODQyO';</script>
+					<script type="text/javascript" src="https://static.alchemyapi.io/scripts/badge/alchemy-badge.js"></script>
+					<a href="#">
+					    <img onclick=logBadgeClick() id="badge-button" style="width:180px;height:53px" src="https://static.alchemyapi.io/images/marketing/badge.png" alt="Alchemy Supercharged" />
+					</a>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+</div>
+
+
+<div id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="social-icons">
+					<div class="container">
+					  <ul class="list-inline d-flex justify-content-center">
+					    <li class="list-inline-item">
+					      <a href="https://discord.gg/5XkvsEmMab" target="_blank">
+					        <img src="/assets/img/discord.png" alt="Logo"/>
+					      </a>
+					    </li>
+					    <li class="list-inline-item">
+					      <a href="https://twitter.com/sarcophagusio" target="_blank">
+					        <img src="/assets/img/twitter.png" alt="Logo"/>
+					      </a>
+					    </li>
+					    <li class="list-inline-item">
+					      <a href="https://github.com/sarcophagus-org" target="_blank">
+					        <img src="/assets/img/github.png" alt="Logo"/>
+					      </a>
+					    </li>
+					    <li class="list-inline-item">
+					      <a href="https://t.me/sarcophagusio" target="_blank">
+					        <img src="/assets/img/telegram.png" alt="Logo"/>
+					      </a>
+					    </li>
+					    <li class="list-inline-item">
+					      <a href="https://www.reddit.com/r/sarcophagusio/" target="_blank">
+					        <img src="/assets/img/reddit.png" alt="Logo"/>
+					      </a>
+					    </li>
+					    <li class="list-inline-item">
+					      <a href="youtube: https://www.youtube.com/channel/UCkiWEIFJEaRP9kwprIve7_w" target="_blank">
+					        <img src="/assets/img/youtube.png" alt="Logo"/>
+					      </a>
+					    </li>
+					    <li class="list-inline-item">
+					      <a href="https://medium.com/sarcophagus-community" target="_blank">
+					        <img src="/assets/img/medium.png" alt="Logo"/>
+					      </a>
+					    </li>
+
+					  </ul>
+					</div>
+				</div>
+			</div>
+		</div> <!-- social row -->
+
+		<div class="row">
+			<div class="col-12 col-xl-6">
+				<div class="row">
+					<div class="col-3">
+						<img src="/assets/img/sarco-logo-white.png" alt="Logo" class="img-fluid"/>
+
+					</div>
+					<div class="col-9">
+						<p>Sarcophagus is a 100% open-source project using the Unlicense. It has been built by a global team of software developers, crypto enthusiasts and security experts. It has not yet been audited; use at your own risk.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xl-1">
+			</div>
+
+
+			<div class="col-6 col-xl-2">
+				<ul class="footer-links">
+					<li><a href="#">Home</a></li>
+					<li><a href="https://sarcopahgus.notion.site/Sarcophagus-Documentation-9d9044719669401a8738a1b9059333cf" target="_blank">Documentation</a></li>
+					<li><a href="/assets/pdf/sarcophagus_litepaper_v0.2.pdf" target="_blank">Litepaper</a></li>
+					<li><a href="https://etherscan.io/token/0x7697b462a7c4ff5f8b55bdbc2f4076c2af9cf51a" target="_blank">Etherscan Token Tracker</a></li>
+
+				</ul>
+			</div>
+
+			<div class="col-6 col-xl-2">
+				<ul class="footer-links">
+					<li><a href="https://app.dev.sarcophagus.io/" target="_blank">Goerli Testnet App</a></li>
+					<li><a href="/" target="_blank">Mainnet ETH App (coming soon)</a></li>
+					<li><a href="https://govern.sarcophagus.io/" target="_blank">Governance Staking</a></li>
+					<li><a href="https://client.aragon.org/#/sarcophagus/" target="_blank">Governance Voting</a></li>
+				</ul>
+			</div>
+		</div> <!-- desc + link row -->
+	</div>
+</div>
+
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
