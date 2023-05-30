@@ -1,6 +1,0 @@
-_site
-_site_arweave
-.sass-cache
-.jekyll-metadata
-node_modules
-Gemfile.lock
