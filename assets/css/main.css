@@ -189,7 +189,7 @@ a {
 
 
 #radioImg {
-  background-image: url('/assets/img/radio.png');
+  background-image: url('{{ site.baseurl }}/assets/img/radio.png');
   background-size: contain;
   background-repeat: no-repeat;
   height: 700px;
@@ -208,7 +208,7 @@ a {
 }
 
 #safeImg {
-  background-image: url('/assets/img/safe.png');
+  background-image: url('{{ site.baseurl }}/assets/img/safe.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -223,7 +223,7 @@ a {
 }
 
 #keysImg {
-  background-image: url('/assets/img/keys.png');
+  background-image: url('{{ site.baseurl }}/assets/img/keys.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
