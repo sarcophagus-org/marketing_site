@@ -39,42 +39,34 @@ a {
 	color: inherit!important;
 }
 
-
-#nav {
-	background-color: #000;
-}
-
-
 .navbar-dark {
 	background-color: #000;
 	color: #fff;
 	font-family: Helvetica, sans-serif;
-	font-size: 1.5em;
 	font-weight: 800;
-
-}
-
-.navbar-dark a {
-	color: #fff;
+	font-size: 1.2em;
 }
 
 .nav-item {
-	margin-left: 50px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+}
+
+.navbar-nav {
 	text-align: center;
 }
 
-.nav-link {
-	margin-top: -10px;
-}
 
 .app-link-button {
 	background-color: #000;
 	border: 3px solid #fff; /* changes */
-	padding: 10px 50px 10px 50px;
 	border-radius: 0px;
 	font-family: Helvetica, sans-serif;
 	font-weight: 800;
 	font-size: 1em;
+	margin-top: -5px;
+	padding: 10px 40px 8px 40px!important;
 }
 
 .app-link-button:hover {
@@ -189,7 +181,7 @@ a {
 
 
 #radioImg {
-  background-image: url('/assets/img/radio.png');
+  background-image: url('/marketing_site/assets/img/radio.png');
   background-size: contain;
   background-repeat: no-repeat;
   height: 700px;
@@ -208,7 +200,7 @@ a {
 }
 
 #safeImg {
-  background-image: url('/assets/img/safe.png');
+  background-image: url('/marketing_site/assets/img/safe.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -223,7 +215,7 @@ a {
 }
 
 #keysImg {
-  background-image: url('/assets/img/keys.png');
+  background-image: url('/marketing_site/assets/img/keys.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -278,6 +270,7 @@ a {
 	padding-top: 20px;
 	padding-bottom: 80px;
 }
+
 .social-icons li {
 	padding-left: 20px;
 	padding-right: 20px;
@@ -314,6 +307,10 @@ a {
     .footer-links {
     	margin-top: 50px;
     }
+    .social-icons li {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
 }
 
 
