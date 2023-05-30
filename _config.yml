@@ -22,7 +22,7 @@ title: Sarcophagus Dead Man's Switch
 # email: your-email@example.com
 #description: >- # this means to ignore newlines until "baseurl:"
 
-baseurl: "/marketing_site/" # the subpath of your site, e.g. /blog
+baseurl: "/marketing_site" # the subpath of your site, e.g. /blog
 url: "https://freddydunningkruger.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
