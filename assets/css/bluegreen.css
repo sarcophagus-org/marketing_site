@@ -1,0 +1,51 @@
+/* 
+
+Dark Blue:
+#131D37
+
+Bright Green:
+#AAF8B2
+
+
+*/
+
+.app-link-button {
+	border: 3px solid #AAF8B2!important;
+}
+
+.app-link-button:hover {
+	background-color: #AAF8B2!important;
+
+}
+
+.accent-bg-hero {
+	background-color: #AAF8B2!important;
+}
+
+#forDevs {
+	background-color: #131D37!important;
+}
+
+.dev-link {
+	border: 4px solid #AAF8B2!important;
+}
+
+.dev-arrow .bi-arrow-up-right {
+	color: #AAF8B2!important;
+}
+
+#useCases {
+	background-color: #131D37!important;
+}
+
+.accent-bg-trans {
+	background-color: rgba(170, 248, 178, 0.8)!important;
+}
+
+#footer {
+	background-color: #131D37!important;
+}
+
+.footer-links { 
+	border-left: 3px solid #AAF8B2!important;
+}

@@ -1,0 +1,51 @@
+/* 
+
+Brown: 
+#55342C
+
+Tan:
+#F7D1Ac
+
+
+*/
+
+.app-link-button {
+	border: 3px solid #F7D1Ac!important;
+}
+
+.app-link-button:hover {
+	background-color: #F7D1Ac!important;
+
+}
+
+.accent-bg-hero {
+	background-color: #F7D1Ac!important;
+}
+
+#forDevs {
+	background-color: #55342C!important;
+}
+
+.dev-link {
+	border: 4px solid #F7D1Ac!important;
+}
+
+.dev-arrow .bi-arrow-up-right {
+	color: #F7D1Ac!important;
+}
+
+#useCases {
+	background-color: #55342C!important;
+}
+
+.accent-bg-trans {
+	background-color: rgba(247, 209, 172, 0.8)!important;
+}
+
+#footer {
+	background-color: #55342C!important;
+}
+
+.footer-links { 
+	border-left: 3px solid #F7D1Ac!important;
+}
