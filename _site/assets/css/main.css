@@ -125,11 +125,13 @@ a {
 	padding-bottom: 30px;
 }
 
+#forDevs h3 {
+	font-size: 1.5em;
+}
 
 .dev-links {
 	padding-top: 40px;
 }
-
 
 .dev-link {
 	border: 4px solid #fff; /* changes */
