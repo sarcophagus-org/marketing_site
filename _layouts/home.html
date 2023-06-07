@@ -1,41 +1,377 @@
----
-layout: default
----
 
-<div>
+{% include head.html %}
+{% include header.html %}
 
-  {%- if page.title -%}
-  <header>
-    <h1>{{ page.title }}</h1>
-  </header>
-  {%- endif -%}
 
-  <section>
-    {{ content }}
-  </section>
 
-  {%- if site.posts.size > 0 -%}
-    <p class="h4">{{ page.list_title | default: "Posts" }}</p>
-    <ul class="list-unstyled">
-      {%- for post in site.posts -%}
-      <li>
-        <span class="text-muted">
-          {%- assign date_format = "%b %-d, %Y" -%}
-          {{ post.date | date: date_format }}
-        </span>
-        <p class="h5">
-          <a href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </p>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%- endif -%}
-
+<div id="hero">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 mx-auto hero-text">
+				<h1>Decentralized, blockchain-enabled, cryptographically secure, general-purpose</h1>
+				<div class="accent-bg-hero">
+					<h1>Digital Dead Man's Switch</h1>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
+
+
+
+
+
+<div id="subHero">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-lg-8 mx-auto">
+				<h4>Dead man's switch - wikipedia.org > wiki > Dead_man's_switch</h4>
+				<p>A dead man's switch is a switch designed to be activated or deactivated if the human operator becomes incapacitated, such as through death, loss of consciousness, or being bodily removed from control</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div id="forDevs">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 mx-auto">
+				<h2> For Developers, By Developers</h2>
+			</div>
+			<div class="col-lg-10 mx-auto">
+				<p>Sarcophagus is decentralized, open-source and DAO owned + operated. We believe bringing dead man's switch funcationality to the web3 ecosystem can empower and provide security infrastructure for an entire generation of applications, regardless of their size. We believe everyone, including individuals, should have the right to affordable, accessable, immutable secret storage and recovery.</p>
+			</div>
+
+
+
+			<div class="container dev-links">
+				<div class="row">
+					<div class="col-md-10 mx-auto">
+						<div class="row">
+
+							<div class="col-12 col-md-6 col-xl-3">
+								<a href="{{ site.baseurl }}/assets/pdf/sarcophagus_litepaper_v0.2.pdf" target="_blank">
+									<div class="dev-link">
+										<div class="row">
+											<div class="col-12 dev-arrow">
+												<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+								  					<path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
+												</svg>
+											</div>
+										</div>
+										<h3>View Litepaper</h3>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-12 col-md-6 col-xl-3">
+								<a href="https://client.aragon.org/#/sarcophagus/" target="_blank">
+									<div class="dev-link">
+										<div class="row">
+											<div class="col-12 dev-arrow">
+												<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+								  					<path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
+												</svg>
+											</div>
+										</div>
+										<h3>Governance</h3>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-12 col-md-6 col-xl-3">
+								<a href="https://sarcopahgus.notion.site/Sarcophagus-Documentation-9d9044719669401a8738a1b9059333cf" target="_blank">
+									<div class="dev-link">
+										<div class="row">
+											<div class="col-12 dev-arrow">
+												<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+								  					<path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
+												</svg>
+											</div>
+										</div>
+										<h3>Documentation</h3>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-12 col-md-6 col-xl-3">
+								<a href="https://discord.gg/5XkvsEmMab" target="_blank">
+									<div class="dev-link">
+										<div class="row">
+											<div class="col-12 dev-arrow">
+												<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+								  					<path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
+												</svg>
+											</div>
+										</div>
+										<h3>Dev Chat</h3>
+									</div>
+								</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+<div id="longTerm">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7">
+				<h2>Long-Term Storage and Recovery</h2>
+				<div class="row">
+					<div class="col-12 col-lg-9">
+						<p>Sarcophagus is designed to allow recovery at custom intervals, when the payload is available for decryption based on a lack of response from the creator. A more complete backup system than traditional recovery mechanisms.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-5">
+				<div id="pocketWatch">
+					<img src="{{ site.baseurl }}/assets/img/pocketwatch.png" alt="Logo" class="img-fluid"/>
+				</div>
+			</div>
+		</div>
+
+		<!-- 
+		<div class="row">
+			<div class="col-md-6">
+				<img src="https://placehold.co/700x350/png" alt="Logo" class="img-fluid"/>
+			</div>
+			<div class="col-md-6">
+				<img src="https://placehold.co/700x350/png" alt="Logo" class="img-fluid"/>
+			</div>
+		</div>
+		-->
+	</div>
+</div>
+
+
+
+
+
+
+<div id="useCases">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2>Use Case Potential:</h2>
+			</div>
+		</div>
+
+		<!-- hidden on large views -->
+		<div class="row d-lg-none">
+			<div class="col-12">
+				<h3><span class="accent-bg-trans">emergency comms</span></h3>
+				<h3><span class="accent-bg-trans">whistleblowers</span></h3>
+				<h3><span class="accent-bg-trans">digital inheritance</span></h3>
+				<h3><span class="accent-bg-trans">crypto key management</span></h3>
+				<h3><span class="accent-bg-trans">credential passdown</span></h3>
+			</div>
+		</div>
+
+		<!-- hidden on small views -->
+		<div class="row d-none d-lg-flex">
+			
+			<div class="col-4">
+				<div id="radioImg">
+					<div id="radioImgText">
+						<h3><span class="accent-bg-trans">emergency communications</span></h3>
+					</div>
+					<div id="radioImgText2">
+						<h3><span class="accent-bg-trans">whistleblowers</span></h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-4">
+				<div id="safeImg">
+					<div id="safeImgText">
+						<h3><span class="accent-bg-trans">digital inheritance</span></h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-4">
+				<div id="keysImg">
+					<div id="keysImgText">
+						<h3><span class="accent-bg-trans">crypto key management</span></h3>
+					</div>
+					<div id="keysImgText2">
+						<h3><span class="accent-bg-trans">credential passdown</span></h3>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="row">
+			<div class="col-12 col-lg-6">
+				<p>There are nearly unlimited use cases for Sarcophagus. It is useful in any situation where a user may want to release information in the event they are removed or no longer in control.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+<div id="partners">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2>Partners and Supporters</h2>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xl-10 mx-auto">
+				<div class="row">
+					<div class="col-6 col-lg-3">
+						<img src="{{ site.baseurl }}/assets/img/placeholder.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+					<div class="col-6 col-lg-3">
+						<img src="{{ site.baseurl }}/assets/img/greenfield.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+					<div class="col-6 col-lg-3">
+						<img src="{{ site.baseurl }}/assets/img/inflection.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+					<div class="col-6 col-lg-3">
+						<img src="{{ site.baseurl }}/assets/img/lattice.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-xl-10 mx-auto">
+				<div class="row">
+					<div class="col-6 col-lg-3">
+						<img src="{{ site.baseurl }}/assets/img/blockchain.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+					<div class="col-6 col-lg-3">
+						<img src="{{ site.baseurl }}/assets/img/4sv.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+					<div class="col-6 col-lg-3">
+						<img src="{{ site.baseurl }}/assets/img/blockchange.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+					<div class="col-6 col-lg-3">
+						<img src="{{ site.baseurl }}/assets/img/decent.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="row">
+			<div class="col-xl-10 mx-auto">
+				<div class="row">
+					<div class="col-6 col-lg-3">
+						<img src="{{ site.baseurl }}/assets/img/coral.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+					<div class="col-6 col-lg-3">
+						<img src="{{ site.baseurl }}/assets/img/3se.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+					<div class="col-6 col-lg-3">
+						<img src="{{ site.baseurl }}/assets/img/compound.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+					<div class="col-6 col-lg-3">
+						<img src="{{ site.baseurl }}/assets/img/arweave.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-xl-10 mx-auto">
+				<div class="row">
+					<div class="col-6 col-lg-3">
+						<img src="{{ site.baseurl }}/assets/img/nxgen.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+					<div class="col-6 col-lg-3">
+						<img src="{{ site.baseurl }}/assets/img/horizons.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+					<div class="col-6 col-lg-3">
+						<img src="{{ site.baseurl }}/assets/img/infinite.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+					<div class="col-6 col-lg-3">
+						<img src="{{ site.baseurl }}/assets/img/ld.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-xl-10 mx-auto">
+				<div class="row">
+					<div class="col-6 col-lg-3">
+						<img src="{{ site.baseurl }}/assets/img/openweb.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+					<div class="col-6 col-lg-3">
+						<img src="{{ site.baseurl }}/assets/img/lo.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+					<div class="col-6 col-lg-3">
+						<img src="{{ site.baseurl }}/assets/img/andres.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+					<div class="col-6 col-lg-3">
+						<img src="{{ site.baseurl }}/assets/img/clayton.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="row">
+			<div class="col-xl-10 mx-auto">
+				<div class="row">
+					<div class="col-6 col-lg-3">
+						<img src="{{ site.baseurl }}/assets/img/jason.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+					<div class="col-6 col-lg-3">
+						<img src="{{ site.baseurl }}/assets/img/kain.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+					<div class="col-6 col-lg-3">
+						<img src="{{ site.baseurl }}/assets/img/luis.png" alt="Logo" class="img-fluid partner-logo"/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-12">
+				<div id="alchemyBadge">
+					<script>const BADGE_ID = 'DczNjM2NTA5ODQyO';</script>
+					<script type="text/javascript" src="https://static.alchemyapi.io/scripts/badge/alchemy-badge.js"></script>
+					<a href="#">
+					    <img onclick=logBadgeClick() id="badge-button" style="width:180px;height:53px" src="https://static.alchemyapi.io/images/marketing/badge.png" alt="Alchemy Supercharged" />
+					</a>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+</div>
+
+
+{% include footer.html %}

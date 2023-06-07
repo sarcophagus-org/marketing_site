@@ -1,20 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title }}</title>
-  <meta name="description" content="{{ page.description}}">
-  <link rel="shortcut icon" href="{{site.baseurl}}{{ "/assets/img/favicon.png" | relative_url }}" type="image/x-icon">
-  <link rel="icon" href="{{ site.baseurl}}{{ "/assets/img/favicon.png" | relative_url }}" type="image/x-icon">
-  <link rel="stylesheet" href="{{ site.baseurl}}{{ "/assets/main.css" | relative_url }}">
-  <script src="{{site.baseurl}}{{ "/assets/javascript/bootstrap/jquery.min.js" | relative_url }}"></script>
-  <script src="{{site.baseurl}}{{ "/assets/javascript/bootstrap/bootstrap.bundle.min.js" | relative_url }}"></script>
-  <meta property="og:title" content="Sarcophagus Dead Man's Switch dApp">
-  <meta property="og:site_name" content="Sarcophagus">
-  <meta property="og:url" content="https://sarcophagus.io">
-  <meta property="og:description" content="Sarcophagus is an autonomous, incentivized dead man's switch dApp built on Ethereum and Arweave.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://sarcophagus.io/assets/img/social_og.png">
+  <title>Sarcophagus Crypto Dead Man's Swtich</title>
+  <meta name="description" content="Sarcophagus is an autonomous, incentivized dead man's switch dApp built on Ethereum and Arweave.">
+  <link rel="icon" href="{{ site.baseurl }}/assets/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+
+  <!-- add random css style overrides -->
+  <script>
+    window.onload = function() {
+        var styles = ['{{ site.baseurl }}/assets/css/bluegreen.css', '{{ site.baseurl }}/assets/css/greenyellow.css', '{{ site.baseurl }}/assets/css/blackpurple.css', '{{ site.baseurl }}/assets/css/goldyellow.css', '{{ site.baseurl }}/assets/css/browntan.css']; // your CSS filenames
+        var style = styles[Math.floor(Math.random() * styles.length)]; // select a random filename
+        var link = document.createElement('link');
+        
+        link.rel = 'stylesheet';
+        link.href = style;
+        
+        document.head.appendChild(link); // append the link element to the head
+    };
+  </script>
+
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180877699-1"></script>
@@ -25,6 +35,8 @@
 
     gtag('config', 'UA-180877699-1');
   </script>
+
+
 
 
 
@@ -67,3 +79,4 @@ ds+8Kf2wxfrqZWw0VpGrxeuv5s7+qS0PhedIVP7z/wD9EFqanhQK7y7E9/pR
 
 
 </head>
+<body>

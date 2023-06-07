@@ -1,78 +1,20 @@
 <nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container">
-    <a class="navbar-brand" rel="author" href="{{ "/" | relative_url }}"><img src="{{site.baseurl}}/assets/img/header_logo.png"/> </a>
-    {%- assign page_paths = site.header_pages -%}
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="/">
+      <img src="{{ site.baseurl }}/assets/img/sarco-logo-white.png" alt="Logo" width="132" height="132">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto">
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Learn
-          </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="{{site.baseurl}}/how_it_works.html">How It Works</a>
-              <a class="dropdown-item" href="{{site.baseurl}}/sarco_token.html">$SARCO Token</a>
-              <a class="dropdown-item" href="{{site.baseurl}}/about.html">About</a>
-              <a class="dropdown-item" href="{{site.baseurl}}/blog.html">Blog</a>
-              <a class="dropdown-item" href="https://sarcopahgus.notion.site/Sarcophagus-Documentation-9d9044719669401a8738a1b9059333cf" target="_blank">Documentation</a>
-              <a class="dropdown-item" href="https://sarcophagus.community/" target="_blank">Community Site</a>
-            </div>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            App
-          </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="https://app.dev.sarcophagus.io/" target="_blank">Goerli Testnet App</a>
-            </div>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Govern
-          </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="https://govern.sarcophagus.io/" target="_blank">Governance App</a>
-              <a class="dropdown-item" href="https://client.aragon.org/#/sarcophagus/" target="_blank">SarcophagusDAO Main</a>
-              <a class="dropdown-item" href="https://gnosis-safe.io/app/eth:0xe74fC9DFc587241daD8A82aB50208355685D2b4C" target="_blank">Ambassadors subDAO</a>
-              <a class="dropdown-item" href="https://gnosis-safe.io/app/eth:0x7862a4314508a9De68FC5e71876D46a1bf4AE032" target="_blank">Payroll SubDAO</a>
-              <a class="dropdown-item" href="https://gnosis-safe.io/app/eth:0xd4690FA92f3F37bf98585FEeAd0E4B3fAD967fcD" target="_blank">Liquidity SubDAO</a>
-              <a class="dropdown-item" href="https://gnosis-safe.io/app/eth:0x753B92a7D7cF0C918B6793E298C9389DB7e42A75" target="_blank">Growth SubDAO</a>
-            </div>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="https://sarcopahgus.notion.site/Sarcophagus-Documentation-9d9044719669401a8738a1b9059333cf" target="_blank">
-            Docs
-          </a>
-        </li>
-      </ul>
-
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item nav-icons">
-          <a class="nav-link" href="https://twitter.com/sarcophagusio" target="_blank"><img src="/assets/img/twitter-icon-solid.svg" class="nav-icon-20"/></a>
-        </li>
-
         <li class="nav-item">
-          <a class="nav-link nav-icon" href="https://discord.gg/5XkvsEmMab" target="_blank"><img src="/assets/img/discord-icon-solid.svg" class="nav-icon-20"/></a>
+          <a class="nav-link" href="https://sarcopahgus.notion.site/Sarcophagus-Documentation-9d9044719669401a8738a1b9059333cf" target="_blank">Documentation</a>
         </li>
-
         <li class="nav-item">
-          <a class="nav-link nav-icon" href="https://t.me/sarcophagusio" target="_blank"><img src="/assets/img/telegram-icon-solid.svg" class="nav-icon-20"/></a>
-        </li>
-
-        <li class="nav-item nav-icon">
-          <a class="nav-link" href="https://github.com/sarcophagus-org" target="_blank"><img src="/assets/img/github-icon-solid.svg" class="nav-icon-20"/></a>
+          <a class="nav-link app-link-button" href="https://app.dev.sarcophagus.io/" target="_blank">Go to App</a>
         </li>
       </ul>
-
     </div>
   </div>
 </nav>
-
-
